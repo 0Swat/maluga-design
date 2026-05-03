@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Quicksand } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import ClientProviders from '@/components/ClientProviders'
 import './globals.css'
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pl" className={quicksand.variable}>
       <body className="font-sans antialiased bg-stone-50 text-ink-900">
         <ClientProviders>{children}</ClientProviders>
+        <Analytics />
       </body>
     </html>
   )
