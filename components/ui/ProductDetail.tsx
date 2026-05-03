@@ -155,7 +155,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           <motion.div variants={fadeUp}>
             <Link
               href="/#kolekcja"
-              className="text-xs font-light tracking-[0.22em] uppercase text-stone-400 hover:text-gold transition-colors duration-300"
+              className="text-sm font-normal tracking-[0.22em] uppercase text-stone-600 hover:text-gold transition-colors duration-300"
             >
               ← Kolekcja
             </Link>
@@ -172,14 +172,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {product.price}
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex items-center gap-3 text-stone-400">
+          <motion.div variants={fadeUp} className="flex items-center gap-3 text-stone-600">
             <Gem size={14} strokeWidth={1.5} />
-            <p className="text-xs font-light tracking-[0.18em] uppercase">{product.material}</p>
+            <p className="text-sm font-normal tracking-[0.18em] uppercase">{product.material}</p>
           </motion.div>
 
           <motion.div variants={fadeUp} className="w-10 h-px bg-stone-200" />
 
-          <motion.p variants={fadeUp} className="text-sm font-light leading-9 text-stone-500">
+          <motion.p variants={fadeUp} className="text-base font-normal leading-9 text-stone-500">
             {product.description}
           </motion.p>
 
@@ -190,9 +190,6 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             >
               Dodaj do koszyka
             </button>
-            <p className="text-xs font-light italic text-stone-400 text-center tracking-wider">
-              Handcrafted. Each piece is unique.
-            </p>
           </motion.div>
         </motion.div>
       </div>

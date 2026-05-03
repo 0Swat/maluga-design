@@ -60,7 +60,7 @@ export default function HeroSection() {
           variants={fadeUp}
           className="text-sm font-normal tracking-[0.22em] uppercase text-stone-100"
         >
-          Biżuteria handmade w stylu minimalistycznym
+          Ręcznie tworzona biżuteria w stylu minimalistycznym
         </motion.p>
 
         <motion.h1
@@ -74,7 +74,7 @@ export default function HeroSection() {
           variants={fadeUp}
           className="text-base font-normal italic text-stone-100 max-w-sm leading-8"
         >
-          Każdy element opowieść. Każdy metal — naturą.
+          Tworzone wolno. Noszone długo.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mt-3">

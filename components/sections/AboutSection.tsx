@@ -17,12 +17,11 @@ const fadeUp = {
   },
 }
 
-const facts = ['Mosiądz i srebro próby 925', 'Kamienie naturalne', 'Każda sztuka unikatowa']
 
 export default function AboutSection() {
   return (
-    <section id="o-mnie" className="py-32 px-6 bg-stone-50">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <section id="o-mnie" className="pt-16 pb-32 md:py-32 px-6 bg-stone-50">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center [&>*:first-child]:order-2 [&>*:first-child]:md:order-1 [&>*:last-child]:order-1 [&>*:last-child]:md:order-2">
         <motion.div
           className="relative h-[520px] md:h-[640px] overflow-hidden"
           initial={{ opacity: 0, x: -28 }}
@@ -47,7 +46,7 @@ export default function AboutSection() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs font-light tracking-[0.32em] uppercase text-gold"
+            className="text-sm font-normal tracking-[0.32em] uppercase text-[#8a6d4e]"
           >
             O twórczyni
           </motion.p>
@@ -71,14 +70,6 @@ export default function AboutSection() {
             powstawała, była unikatowa.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex flex-col pt-4">
-            {facts.map((fact, i) => (
-              <div key={fact}>
-                {i > 0 && <div className="h-px bg-gold/30 my-4" />}
-                <p className="text-xs font-light tracking-[0.22em] uppercase text-ink-800">{fact}</p>
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>
